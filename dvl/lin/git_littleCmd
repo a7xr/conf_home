@@ -1,0 +1,10 @@
+# to list #remote_repos												%001
+# to get some information about the #remote_repo					%002
+# to #rename the name of a #remote_repo								%003
+
+#	%002
+git remote show name_remote_repo
+ex:	git remote show origin
+
+#	%001
+git remote -v
