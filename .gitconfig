@@ -1,5 +1,15 @@
+#	when I commit, my #name and my email have to be written in the commit	%001
+#	to define what is my default editor when git want to edit something		%002
 [user]
+#	%001
 	name = nonicken
 	email = solofomamitiana0@gmail.com
 [core]
+#	%002
 	editor = vim
+
+[alias]
+	co = commit
+	st = status
+	puom = push -u origin master
+	
