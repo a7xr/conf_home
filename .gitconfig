@@ -1,5 +1,11 @@
-#	when I commit, my #name and my email have to be written in the commit	%001
+#	when I commit, my #name and my #email have to be written in the commit	%001
 #	to define what is my default editor when git want to edit something		%002
+#	to #undo #delete the last commit #last_commit							%003
+#	Afficher un historique condensé des commits								%004
+#	Afficher les changements réalisés depuis le dernier pull				%005
+#	display the #contributors and the number of their commit				%006
+
+
 [user]
 #	%001
 	name = nonicken
@@ -12,4 +18,15 @@
 	co = commit
 	st = status
 	puom = push -u origin master
-	
+
+#	%003
+	undo = git reset --soft HEAD^
+
+#	%004
+	oneline = log --pretty=oneline --abbrev-commit --graph --decorate
+
+#	%005
+	lc = !git oneline ORIG_HEAD.. --stat --no-merges
+
+#	%006
+	who = shortlog -sne
