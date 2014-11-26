@@ -51,6 +51,7 @@
 "
 "
 
+
 "	%038
 autocmd BufNewFile *.py 0r /root/.vim/nonicken/templates/python.tpl
 
@@ -89,7 +90,6 @@ endfunction
 
 "	%031
 set viewdir=$HOME/.vim/nonicken/views
-
 "	%030
 set omnifunc=CompleteEmails
 function! CompleteEmails(findstart, base)
