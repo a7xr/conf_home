@@ -235,4 +235,3 @@ set nu
 "	%008
 set smartindent
 
-" no comment
