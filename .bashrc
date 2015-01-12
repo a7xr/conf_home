@@ -59,8 +59,17 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-	PS1='\n\[\033[107m\] \[\033[00m\] \$ '
+	# like this
+	#   [] #:~/conf_home
+    PS1='\n\[\033[107m\] \[\033[00m\] :\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+	# like this:
+	# 	[] root@lin:~/conf_home#
+    # PS1='\n\[\033[107m\] \[\033[00m\] ${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+	# like this
+	#	[] # refr_bash
+	#PS1='\n\[\033[107m\] \[\033[00m\] \$ '
 else
     #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 	PS1='\n\[\033[107m\] \[\033[00m\] \$ '
