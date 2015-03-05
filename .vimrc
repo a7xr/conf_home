@@ -147,7 +147,7 @@ nmap <C-P>g :GundoToggle<CR>
 source $HOME/ms_conf/viming
 
 "   %023
-nmap <C-P>n :NERDTreeToggle<CR>
+nmap <C-a>nerdtree :NERDTreeToggle<CR>
 
 "   %022
 call pathogen#infect()

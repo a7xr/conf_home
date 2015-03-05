@@ -69,6 +69,7 @@ if [ "$color_prompt" = yes ]; then
 
 	# like this
 	#	[] # refr_bash
+	# no path of the current emplct
 	#PS1='\n\[\033[107m\] \[\033[00m\] \$ '
 else
     #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
