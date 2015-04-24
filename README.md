@@ -1,7 +1,4 @@
-# conf_home
-some configuration in my home
+conf_home
+=========
 
-this repo should be in
-/home
-or
-/root
+some configuration in my home
