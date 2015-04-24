@@ -124,4 +124,3 @@ if ! shopt -oq posix; then
 fi
 
 source /root/ms_conf/os_tool
-source /root/dvl/lin/basisShell

@@ -48,9 +48,15 @@
 "   #automatically  
 " when u create a #pythonFile, then it will create a #template      %038    
 "   #automatically  
-"
-"
+" to activate omni completion                                       %039
+" to deactivate beeping in gvim                                     %040
+"end_comment
 
+"   %040
+set vb
+
+"   %039
+set omnifunc=syntaxcomplete#Complete
 
 "   %038
 autocmd BufNewFile *.py 0r /root/.vim/nonicken/templates/python.tpl
@@ -235,4 +241,4 @@ set nu
 "   %008
 set smartindent
 
-" no comment
+filetype plugin on
